@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="popup.css">
+    <title>Reload Page</title>
+    <h1>Tab Refresh Manager</h1>
+</head>
+<body>
+    <div class="formdiv">
+    <form id="form">
+        <p>Rrefresh Frequency:</p>
+        <input type="radio" id="5seconds" name="frequency" value=5>
+        <label for="5seconds">5 Seconds</label><br>
+        <input type="radio" id="15seconds" name="frequency" value=15>
+        <label for="15seconds">15 Seconds</label><br>
+        <input type="radio" id="30seconds" name="frequency" value=30>
+        <label for="30seconds">30 Seconds</label><br>
+        <input type="radio" id="60seconds" name="frequency" value=60>
+        <label for="60seconds">60 Seconds</label><br>
+        <input type="radio" id="90seconds" name="frequency" value=90>
+        <label for="90seconds">90 Seconds</label><br>
+        <input type="radio" id="300seconds" name="frequency" value=300>
+        <label for="300seconds">300 Seconds</label><br>
+        <input type="button" id="submitform" value="submit"><br>
+        <input type="button" id="stoprefresh" value="STOP">
+        <br>
+    </form>
+    </div>
+    <div>
+        <h3>Refreshing Tabs:</h3>
+        <ul id="tabs-list">
+        </ul>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+/* popup.css */
+
+/* Style for the popup container */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 20px;
+    max-width: 350px;
+    min-width: 250px;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+h1 {
+    font-size: 20px;
+    margin-bottom: 12px;
+    font-weight: bold;
+    color: #333;
+}
+/* Style for the form and input elements */
+form {
+    margin: 0px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+p {
+    font-size: 16px;
+    margin-bottom: 12px;
+    font-weight: bold;
+    color: #333;
+}
+
+input[type="radio"] {
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+label {
+    font-size: 14px;
+    margin-right: 15px;
+    color: #555;
+}
+
+/* Style for the submit and stop buttons */
+input[type="button"] {
+    background-color: #2fc8ff;
+    color: white;
+    border: none;
+    padding: 12px 10px;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 15px;
+    cursor: pointer;
+    border-radius: 6px;
+    width: 100%;
+    box-sizing: border-box;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+input[type="button"]:disabled {
+    background-color: #ddd;
+    cursor: not-allowed;
+}
+
+#submitform:not(:disabled):hover {
+    background-color: #65ff54;
+    transform: translateY(2px);
+}
+
+#stoprefresh:not(:disabled):hover {
+    background-color: #ff4545;
+    transform: translateY(2px);
+}
+
+#tabs-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+#tabs-list li {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #333;
+    padding: 5px 0;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%; 
+    overflow: hidden;
+    white-space: nowrap; 
+    text-overflow: ellipsis;
+}
+#tabs-list li span{
+    display:inline-block;
+    max-width: 150px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-right: 10px;
+}
+#tabs-list button {
+    background-color: #df3e33;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    font-size: 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-colo 0.2s ease;
+}
+
+#tabs-list button:hover {
+    background-color:#a92e25;
+}

@@ -1,0 +1,17 @@
+{
+    "manifest_version": 3,
+    "name": "Simple Tab Refresher",
+    "version": "0.1.0",
+    "description": "Refreshes web pages",
+    "permissions": ["activeTab","scripting","storage"],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "action":{
+        "default_popup": "popup.html"
+    },
+    "host_permissions":[
+        "http://*/*",
+        "https://*/*"
+    ]
+}
