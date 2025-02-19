@@ -52,12 +52,18 @@ function updateRefreshingTabs() {
         tabsList.innerHTML = '';
         for (const tabId in response.refreshingTabs) {
             chrome.tabs.get(parseInt(tabId), function(tab) {
+            
             const listItem = document.createElement('li');
             const tabName = tab.title || 'Untitled Tab';
-            listItem.textContent = `${tabName}`;
+
+            const textDiv = document.createElement('div');
+            textDiv.classList.add('text')
+            textDiv.textContent = `${tabName}`
+
             const stopButton = document.createElement('button');
-            stopButton.textContent = ' Stop Refresh';
+            stopButton.textContent = 'STOP';
             stopButton.addEventListener('click', () => stopTabRefresh(tabId));
+            listItem.appendChild(textDiv);
             listItem.appendChild(stopButton);
             tabsList.appendChild(listItem);
         });
