@@ -3,7 +3,7 @@
     "name": "Simple Tab Refresher",
     "version": "0.1.0",
     "description": "Refreshes web pages at set increments.",
-    "permissions": ["activeTab","scripting","storage"],
+    "permissions": ["activeTab"],
     "background": {
         "service_worker": "background.js"
     },
